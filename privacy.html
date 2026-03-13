@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Offroad Driving Master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.75;
+            color: #b8b0a0;
+            background: #1a1a1a;
+            background-image:
+                linear-gradient(180deg, rgba(45, 35, 25, 0.97) 0%, rgba(26, 26, 26, 1) 40%),
+                radial-gradient(ellipse at 20% 30%, #2d3d2a 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, #3d2a1a 0%, transparent 50%);
+            padding: 24px;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30h60M30 0v60' stroke='%23333' stroke-width='0.3' fill='none' opacity='0.12'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes dust {
+            0%, 100% { opacity: 0.12; transform: translateY(0); }
+            50% { opacity: 0.28; transform: translateY(-6px); }
+        }
+
+        .mud-splatter {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .mud-splatter span {
+            position: absolute;
+            font-size: 26px;
+            opacity: 0.18;
+            animation: dust 7s ease-in-out infinite;
+        }
+
+        .mud-splatter span:nth-child(1) { top: 10%; left: 6%; animation-delay: 0s; }
+        .mud-splatter span:nth-child(2) { top: 62%; left: 90%; animation-delay: 1.8s; }
+        .mud-splatter span:nth-child(3) { top: 38%; left: 68%; animation-delay: 1s; }
+        .mud-splatter span:nth-child(4) { top: 72%; left: 14%; animation-delay: 2.5s; }
+        .mud-splatter span:nth-child(5) { top: 48%; left: 52%; animation-delay: 1.4s; }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(165deg, rgba(45, 40, 35, 0.94) 0%, rgba(30, 28, 26, 0.97) 100%);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            padding: 46px 44px;
+            border-radius: 20px;
+            border: 2px solid rgba(232, 140, 60, 0.3);
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-area {
+            text-align: center;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid rgba(232, 140, 60, 0.2);
+        }
+
+        .header-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            color: #f0ebe0;
+            font-size: 2.2em;
+            margin-bottom: 6px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 .highlight {
+            color: #e88c3c;
+        }
+
+        .app-name {
+            color: #c4b8a8;
+            font-size: 1em;
+            font-weight: 600;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .last-updated {
+            color: #8a8278;
+            font-size: 0.88em;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section-title {
+            color: #e8e0d4;
+            font-size: 1.18em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(232, 140, 60, 0.25);
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #b8b0a0;
+            font-size: 1em;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 24px;
+            list-style: none;
+        }
+
+        li {
+            margin: 6px 0;
+            color: #b8b0a0;
+            font-size: 1em;
+            line-height: 1.7;
+            position: relative;
+            padding-left: 8px;
+        }
+
+        li::before {
+            content: "—";
+            position: absolute;
+            left: -16px;
+            color: #e88c3c;
+            font-weight: 700;
+        }
+
+        a {
+            color: #e88c3c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #f0a050;
+        }
+
+        strong {
+            color: #e8e0d4;
+            font-weight: 600;
+        }
+
+        .contact-block {
+            background: rgba(232, 140, 60, 0.08);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(232, 140, 60, 0.25);
+            margin-top: 12px;
+        }
+
+        .contact-block p {
+            margin: 4px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 32px;
+            color: #1a1a1a;
+            font-weight: 700;
+            padding: 14px 32px;
+            background: linear-gradient(145deg, #e88c3c 0%, #c45c2a 50%, #a04a20 100%);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 200, 150, 0.25);
+            transition: all 0.3s;
+            box-shadow: 0 8px 26px rgba(232, 140, 60, 0.3);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 34px rgba(232, 140, 60, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 32px 22px; border-radius: 16px; }
+            h1 { font-size: 1.85em; }
+            .section-title { font-size: 1.1em; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mud-splatter">
+        <span>🛞</span><span>🚗</span><span>🏔️</span>
+        <span>🛞</span><span>🚗</span>
+    </div>
+
+    <div class="container">
+        <div class="header-area">
+            <span class="header-icon">🚙</span>
+            <h1>Privacy <span class="highlight">Policy</span></h1>
+            <p class="app-name">Offroad Driving Master</p>
+            <p class="last-updated">Effective: March 2026</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Our Commitment</h2>
+            <p>Crazy Cross Games ("we") develops Offroad Driving Master. We are committed to transparency about data practices. This policy describes how we handle information in connection with the app. Use of Offroad Driving Master indicates acceptance of these terms.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Data Not Collected</h2>
+            <p>The developer does not collect any data from this app. We do not collect, process, or store:</p>
+            <ul>
+                <li>Personal identification (name, email, phone, address)</li>
+                <li>Device or advertising identifiers, or IP address</li>
+                <li>Location or geolocation information</li>
+                <li>Gameplay, scores, or usage analytics</li>
+                <li>Any other information that could identify you or your device</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Local Data Only</h2>
+            <p>Any saved progress, settings, or preferences are stored only on your device. This data is not transmitted to our servers or shared with third parties. You may delete it by uninstalling the app.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">External Links</h2>
+            <p>This site or the app may link to external services (e.g. the App Store). Those services have their own privacy policies. We are not responsible for their practices.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Policy Changes</h2>
+            <p>We may revise this policy occasionally. The "Effective" date above will be updated when changes are made. Continued use of the app after updates means you accept the revised policy.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Contact</h2>
+            <p>For privacy-related questions or requests regarding Offroad Driving Master, you may contact the developer:</p>
+            <div class="contact-block">
+                <p><strong>Developer:</strong> Sana Aslam</p>
+                <p><strong>Privacy policy (developer):</strong> <a href="https://ccgstudio.home.blog/" target="_blank" rel="noopener noreferrer">ccgstudio.home.blog</a></p>
+            </div>
+            <p>We aim to respond within a reasonable time.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+</body>
+
+</html>
